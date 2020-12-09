@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles_reg.css" rel="stylesheet" type="text/css">
+    <title>Registration</title>
+</head>
+<body>
+
+<script defer src="js/registration.js"></script>
+<form class="transparent" id="form1" novalidate>
+    <div class="form-inner">
+        <h3>Registration</h3>
+
+        <label for="mail" >Your Email </label>
+        <input  type="email" id="mail" name="email_address" placeholder="double click for example">
+
+        <label for="username">Your nickname</label>
+        <input type="text" id="username" name="username" >
+
+        <label for="tel">Your phone number</label>
+        <input type="tel" id="tel" name="phone_number" >
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="ctrl  +  click to get random password">
+
+        <input type="checkbox" id="custom-checkbox">
+        <label for="custom-checkbox">Remember me</label>
+
+        <input type="button" id="reg"  onclick="valid(document.getElementById('form1'))" value="Register">
+
+    </div>
+</form>
+
+</body>
+</html>
